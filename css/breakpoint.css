@@ -1,0 +1,24 @@
+@media (min-width: 425px) {
+  
+}
+
+@media (min-width: 768px) {
+  .logo {
+    display: block;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+
+  .menu-container {
+    display: flex;
+    gap: var(--space-md);
+    align-items: center;
+  }
+  
+}
+
+@media (min-width: 1200px) {
+  
+}

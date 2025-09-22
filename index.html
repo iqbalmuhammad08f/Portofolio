@@ -1,20 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/setup.css">
-  <title>Portofolio</title>
-</head>
-<body>
-  <nav class="nav-container">
-    <ul class="menu-container">
-      <li><a href="">Home</a></li>
-      <li><a href="">About</a></li>
-      <li><a href="">Skill</a></li>
-      <li><a href="">Project</a></li>
-      <li><a href="">Contact</a></li>
-    </ul>
-  </nav>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/setup.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/breakpoint.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Portofolio</title>
+  </head>
+  <body>
+    <nav class="nav-container">
+      <div class="logo">
+        <p>Iqbal's Portofolio</p>
+      </div>
+      <ul id="menu" class="menu-container ">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div id="menu-icon" class="menu-icon">
+        <i class="material-icons" style="font-weight: bold; color: var(--gray-50);"> menu </i>
+      </div>
+    </nav>
+    <main>
+      <section id="home" class="home-container">
+        <div class="foto">foto</div>
+        <div class="content">
+          <p class="nama">Muhamad Iqbal Nur Hakim</p>
+          <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, ducimus at iste, officiis quia optio animi blanditiis ut nobis harum eos! Assumenda, quaerat aliquid ipsa a aperiam necessitatibus esse. Harum!</p>
+        </div>
+        <div class="info">
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-github"></i>
+        </div>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
 </html>
