@@ -1,21 +1,11 @@
-let menu_icon = document.getElementById("menu-icon");
-let icon = menu_icon.firstElementChild
+let link_container = document.getElementById("link-container");
+let open_side_menu = document.getElementById("menu-open");
+let close_side_menu = document.getElementById("menu-close");
 
-menu_icon.addEventListener("click",() => {
-  let menu = document.getElementById("menu");
-  x = menu.classList.toggle("menu-active");
-
-  if (x == true) {
-    icon.innerHTML = "close";
-  } else {
-    icon.innerHTML = "menu";
-  }
+open_side_menu.addEventListener("click",() => {
+  link_container.classList.add("link-open");
 })
 
-window.addEventListener("resize", () => {
-  let menu = document.getElementById("menu");
-  let width = window.screen.width
-  if (width >= 768) {
-    menu.classList.remove("menu-active");
-  }
+close_side_menu.addEventListener("click",() => {
+  link_container.classList.remove("link-open");
 })

@@ -6,39 +6,79 @@
     <link rel="stylesheet" href="css/setup.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/breakpoint.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <title>Portofolio</title>
   </head>
   <body>
     <nav class="nav-container">
-      <div class="logo">
-        <p>Iqbal's Portofolio</p>
-      </div>
-      <ul id="menu" class="menu-container ">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul id="link-container" class="link-container">
+        <div class="title">
+          <p>Navigation</p>
+          <div id="menu-close" class="side-menu">
+            <i class="bi bi-layout-sidebar-inset"></i>
+          </div>
+        </div>
+        <li class="active">
+          <i class="bi bi-house-door-fill"></i>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <i class="bi bi-file-person-fill"></i>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <i class="bi bi-tools"></i>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <i class="bi bi-folder-fill"></i>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <i class="bi bi-envelope-fill"></i>
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
-      <div id="menu-icon" class="menu-icon">
-        <i class="material-icons" style="font-weight: bold; color: var(--gray-50);"> menu </i>
+      <div id="menu-open" class="side-menu">
+        <i class="bi bi-layout-sidebar-inset-reverse"></i>
       </div>
     </nav>
-    <main>
-      <section id="home" class="home-container">
-        <div class="foto">foto</div>
-        <div class="content">
-          <p class="nama">Muhamad Iqbal Nur Hakim</p>
-          <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, ducimus at iste, officiis quia optio animi blanditiis ut nobis harum eos! Assumenda, quaerat aliquid ipsa a aperiam necessitatibus esse. Harum!</p>
+    <section id="home" class="home-container">
+      <div class="description">
+        <div class="description-content">
+          <h1>Hi, I'm Muhammad Iqbal Nur Hakim</h1>
+          <h2>Jember University students</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi
+            voluptatibus voluptates dolores voluptatum distinctio veniam
+            laudantium accusamus minus harum doloremque ut error, maxime sint
+            dignissimos, odio quaerat repellat fugit quidem.
+          </p>
+          <i class="bi bi-geo-alt">Blitar, East Java</i>
+            <button class="project-button">
+              <i class="bi bi-folder-fill"></i>
+              <p>View Project</p>
+              <i class="bi bi-arrow-right"></i>
+            </button>
         </div>
-        <div class="info">
-          <i class="bi bi-instagram"></i>
+        <div class="description-contact">
+          <p>Follow Me: </p>
           <i class="bi bi-github"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-whatsapp"></i>
         </div>
-      </section>
-    </main>
+      </div>
+      <div class="img-card">
+        <img src="assets/card-foto.jpg" alt="" />
+      </div>
+    </section>
     <script src="js/script.js"></script>
   </body>
 </html>

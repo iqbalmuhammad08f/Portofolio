@@ -1,24 +1,88 @@
-@media (min-width: 425px) {
-  
-}
-
-@media (min-width: 768px) {
-  .logo {
-    display: block;
+@media (max-width: 640px) {
+  .nav-container {
+    height: 50px;
+    justify-content: end;
+    padding: var(--space-sm) var(--space-md);
+    position: relative;
   }
-  
-  .menu-icon {
-    display: none;
-  }
-
-  .menu-container {
+  .nav-container .link-container {
     display: flex;
-    gap: var(--space-md);
-    align-items: center;
+    position: absolute;
+    top: 0;
+    right: -200px;
+    flex-direction: column;
+    width: fit-content;
+    border-radius: 0;
+    height: 100vh;
+    transition: right var(--transition-fast);
   }
-  
-}
 
-@media (min-width: 1200px) {
-  
+  .nav-container .link-container.link-open {
+    right: 0;
+  }
+
+  .nav-container .link-container .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-md);
+    font-weight: 600;
+  }
+
+  .nav-container .link-container li {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav-container .link-container li:hover {
+    border-radius: var(--radius-sm);
+  }
+
+  .nav-container .side-menu {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-sm);
+  }
+
+  .home-container {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    gap: 5%;
+    height: calc(100vh - 50px);
+    padding-block: 1rem;
+  }
+
+  .home-container .img-card {
+    margin-top: unset;
+    width: 100%;
+    padding: var(--space-md);
+    box-shadow: unset;
+    display: flex;
+    justify-content: center;
+  }
+
+  .home-container .img-card img {
+    width: auto;
+    height: 100%;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .home-container .description .description-content {
+    justify-content: start;
+  }
+
+  .home-container .description .description-content h1 {
+    font-size: var(--font-sm);
+  }
+
+  .home-container .description .description-content h2 {
+    font-size: var(--font-xs);
+  }
+
+  .home-container .description .description-content p {
+    font-size: 1rem;
+  }
+
 }
