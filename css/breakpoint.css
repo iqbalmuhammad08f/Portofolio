@@ -1,9 +1,8 @@
 @media (max-width: 640px) {
   .nav-container {
-    height: 50px;
+    height: 80px;
     justify-content: end;
     padding: var(--space-sm) var(--space-md);
-    position: relative;
   }
   .nav-container .link-container {
     display: flex;
@@ -43,13 +42,14 @@
     display: flex;
     align-items: center;
     font-size: var(--font-sm);
+    background-color: var(--gray-50);
   }
 
   .home-container {
     flex-direction: column-reverse;
     justify-content: space-between;
     gap: 5%;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 80px);
     padding-block: 1rem;
   }
 
@@ -83,6 +83,15 @@
 
   .home-container .description .description-content p {
     font-size: 1rem;
+  }
+
+  .about-container .about-content .about-img {
+    display: none;
+  }
+
+  .about-content .about-description .detail-description {
+    display: flex;
+    flex-direction: column;
   }
 
 }

@@ -9,3 +9,4 @@ open_side_menu.addEventListener("click",() => {
 close_side_menu.addEventListener("click",() => {
   link_container.classList.remove("link-open");
 })
+
